@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invalid Email Address</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 auto 10px;
+    }
+
+    .tip {
+      background-color: #ffe6e6;
+      border-left: 4px solid #e63946;
+      padding: 10px;
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    ul {
+      text-align: left;
+      margin: 10px auto 0;
+      max-width: 300px;
+      padding-left: 20px;
+    }
+
+    .button,
+    input[type="submit"] {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #457b9d;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover,
+    input[type="submit"]:hover {
+      background-color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="alert">
+    <h1>Invalid Email Address</h1>
+    <p>
+      The email address you entered doesn't appear to be valid. A valid email must include an
+      <strong>@</strong> symbol and end with a proper domain suffix such as:
+    </p>
+    <ul>
+      <li>.com</li>
+      <li>.ca</li>
+      <li>.org</li>
+      <li>.net</li>
+      <li>.in</li>
+    </ul>
+
+    <div class="tip">
+      Example of valid emails: <br />
+      john.doe@example.com <br />
+      user123@domain.in
+    </div>
+
+    <form action="Register.html">
+      <input type="submit" value="Return to Home" />
+    </form>
+
+    <!-- Optional retry button if needed:
+    <a href="your-form-page.html" class="button">Try Again</a>
+    -->
+  </div>
+</body>
+</html>

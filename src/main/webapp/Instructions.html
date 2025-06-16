@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #004080;
+        }
+        ul {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #proceedBtn {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: not-allowed;
+        }
+        #proceedBtn.enabled {
+            cursor: pointer;
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Test Application - Examination Instructions</h1>
+    <ul>
+        <li><strong>Total Duration:</strong> 60 minutes.</li>
+        <li><strong>Total Questions:</strong> 46 multiple choice questions (MCQs).</li>
+        <li>The exam will automatically be submitted once the 60 minutes are completed. No additional time will be provided.</li>
+        <li>Maintain <strong>eye contact with the screen</strong> during the entire test duration.</li>
+        <li>Write the exam in a <strong>quiet and distraction-free environment</strong>, preferably in a dedicated hall or study area.</li>
+        <li><span class="note">Avoid using any internet resources</span> including but not limited to Google, ChatGPT, forums, or any external help.</li>
+        <li>Using electronic devices, books, or notes during the exam is strictly prohibited.</li>
+        <li>The system will monitor your behavior during the exam. Any <strong>suspicious or malicious activity</strong> such as:
+            <ul>
+                <li>Looking away from the screen frequently,</li>
+                <li>Attempting to talk to or notice another person,</li>
+                <li>Removing or turning off the camera (if proctoring is enabled),</li>
+                <li>Leaving the test window or opening other browser tabs,</li>
+                <li>Keeping contact devices (mobile, smartwatch, etc.) nearby</li>
+            </ul>
+            may result in immediate suspension or termination of the exam.
+        </li>
+        <li>Do not refresh or close the browser during the test. Doing so may result in losing your progress.</li>
+        <li>Ensure a stable internet connection throughout the test. Connectivity issues may affect your performance or lead to disqualification.</li>
+        <li>Once you submit the test or time runs out, no changes can be made to your answers.</li>
+        <li>Make sure to read each question carefully before selecting an answer.</li>
+        <li>There is no negative marking unless explicitly mentioned in the question.</li>
+        <li>Attempt all questions to maximize your score.</li>
+        <li>If you face any technical issues, immediately contact the test supervisor or support team.</li>
+    </ul>
+
+    <div class="footer">
+        <strong>Note:</strong> By starting the test, you agree to comply with all the rules and instructions mentioned above.
+        <br><br>
+        <em>Best of luck with your exam!</em>
+    </div>
+
+	<form action="Questions.html">
+    <div class="actions">
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox">I have read and accept all the above instructions.</label>
+        <br><br>
+        <input type="submit" id="proceedBtn" name="Proceed to Exam" value="Proceed to Exam" disabled >
+    </div>
+    </form>
+
+    <script>
+        const checkbox = document.getElementById('agreeCheckbox');
+        const button = document.getElementById('proceedBtn');
+
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                button.disabled = false;
+                button.classList.add('enabled');
+            } else {
+                button.disabled = true;
+                button.classList.remove('enabled');
+            }
+        });
+
+        button.addEventListener('click', function () {
+            if (!button.disabled) {
+                // Redirect to exam page (update link accordingly)
+                window.location.href = "exam.html"; // Change this to your actual exam page
+            }
+        });
+    </script>
+</body>
+</html>

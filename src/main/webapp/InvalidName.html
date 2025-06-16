@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invalid Name</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      color: #333;
+    }
+
+    h1 {
+      color: #dc3545;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #457b9d;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    input[type="submit"] {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #457b9d;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" role="alert">
+    <h1>Invalid Name</h1>
+    <p>
+      The name you entered is invalid. Please make sure it only contains alphabetic characters and is not empty. Avoid using numbers or special characters.
+    </p>
+    <!--<a href="your-form-page.html" class="button">Try Again</a>-->
+      <form action="Register.html">
+    <input type="submit" value="Return to home">
+  </form>
+  </div>
+
+</body>
+</html>

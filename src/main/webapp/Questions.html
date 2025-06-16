@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java MCQ Quiz</title>
+    <style>
+    
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .quiz-container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .Questions_submit {
+  text-align: center;
+  margin-top: 50px; /* Optional spacing */
+}
+
+.Questions_submit input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Questions_submit input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+        
+        
+    </style>
+</head>
+<body>
+
+    <h1>Java Programming MCQ Quiz</h1>
+	<form action="Questions_Validator" method="post" >
+    <div class="quiz-container">
+        <h2>1. Who invented Java Programming?</h2>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> a) Guido van Rossum</label>
+            <label><input type="radio" name="q1" value="b"> b) James Gosling</label>
+            <label><input type="radio" name="q1" value="c"> c) Dennis Ritchie</label>
+            <label><input type="radio" name="q1" value="d"> d) Bjarne Stroustrup</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>2. Which statement is true about Java?</h2>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> a) Java is a sequence-dependent programming language</label>
+            <label><input type="radio" name="q2" value="b"> b) Java is a code dependent programming language</label>
+            <label><input type="radio" name="q2" value="c"> c) Java is a platform-dependent programming language</label>
+            <label><input type="radio" name="q2" value="d"> d) Java is a platform-independent programming language</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>3. Which component is used to compile, debug and execute the java programs?</h2>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> a) JRE</label>
+            <label><input type="radio" name="q3" value="b"> b) JIT</label>
+            <label><input type="radio" name="q3" value="c"> c) JDK</label>
+            <label><input type="radio" name="q3" value="d"> d) JVM</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>4. Which one of the following is not a Java feature?</h2>
+        <div class="options">
+            <label><input type="radio" name="q4" value="a"> a) Object-oriented</label>
+            <label><input type="radio" name="q4" value="b"> b) Use of pointers</label>
+            <label><input type="radio" name="q4" value="c"> c) Portable</label>
+            <label><input type="radio" name="q4" value="d"> d) Dynamic and Extensible</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>5. Which of these cannot be used for a variable name in Java?</h2>
+        <div class="options">
+            <label><input type="radio" name="q5" value="a"> a) identifier & keyword</label>
+            <label><input type="radio" name="q5" value="b"> b) identifier</label>
+            <label><input type="radio" name="q5" value="c"> c) keyword</label>
+            <label><input type="radio" name="q5" value="d"> d) none of the mentioned</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>6. What is the extension of java code files?</h2>
+        <div class="options">
+            <label><input type="radio" name="q6" value="a"> a) .js</label>
+            <label><input type="radio" name="q6" value="b"> b) .txt</label>
+            <label><input type="radio" name="q6" value="c"> c) .class</label>
+            <label><input type="radio" name="q6" value="d"> d) .java</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>7. What will be the output of the following Java code?<br>
+        <pre>
+class increment {
+    public static void main(String args[]) {        
+         int g = 3;
+         System.out.print(++g * 8);
+    } 
+}
+        </pre></h2>
+        <div class="options">
+            <label><input type="radio" name="q7" value="a"> a) 32</label>
+            <label><input type="radio" name="q7" value="b"> b) 33</label>
+            <label><input type="radio" name="q7" value="c"> c) 24</label>
+            <label><input type="radio" name="q7" value="d"> d) 25</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>8. Which environment variable is used to set the java path?</h2>
+        <div class="options">
+            <label><input type="radio" name="q8" value="a"> a) MAVEN_Path</label>
+            <label><input type="radio" name="q8" value="b"> b) JavaPATH</label>
+            <label><input type="radio" name="q8" value="c"> c) JAVA</label>
+            <label><input type="radio" name="q8" value="d"> d) JAVA_HOME</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>9. What will be the output of the following Java program?<br>
+        <pre>
+class output {
+    public static void main(String args[]) {
+        double a, b, c;
+        a = 3.0/0;
+        b = 0/4.0;
+        c = 0/0.0;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    } 
+}
+        </pre></h2>
+        <div class="options">
+            <label><input type="radio" name="q9" value="a"> a) NaN</label>
+            <label><input type="radio" name="q9" value="b"> b) Infinity</label>
+            <label><input type="radio" name="q9" value="c"> c) 0.0</label>
+            <label><input type="radio" name="q9" value="d"> d) all of the mentioned</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>10. Which of the following is not an OOPS concept in Java?</h2>
+        <div class="options">
+            <label><input type="radio" name="q10" value="a"> a) Polymorphism</label>
+            <label><input type="radio" name="q10" value="b"> b) Inheritance</label>
+            <label><input type="radio" name="q10" value="c"> c) Compilation</label>
+            <label><input type="radio" name="q10" value="d"> d) Encapsulation</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>11. What is not the use of “this” keyword in Java?</h2>
+        <div class="options">
+            <label><input type="radio" name="q11" value="a"> a) Referring to the instance variable when a local variable has the same name</label>
+            <label><input type="radio" name="q11" value="b"> b) Passing itself to the method of the same class</label>
+            <label><input type="radio" name="q11" value="c"> c) Passing itself to another method</label>
+            <label><input type="radio" name="q11" value="d"> d) Calling another constructor in constructor chaining</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>12. What will be the output of the following Java program?<br>
+        <pre>
+class variable_scope {
+    public static void main(String args[]) {
+        int x;
+        x = 5;
+        {
+            int y = 6;
+            System.out.print(x + " " + y);
+        }
+        System.out.println(x + " " + y);
+    } 
+}
+        </pre></h2>
+        <div class="options">
+            <label><input type="radio" name="q12" value="a"> a) Compilation error</label>
+            <label><input type="radio" name="q12" value="b"> b) Runtime error</label>
+            <label><input type="radio" name="q12" value="c"> c) 5 6 5 6</label>
+            <label><input type="radio" name="q12" value="d"> d) 5 6 5</label>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>13. What will be the error in the following Java code?<br>
+        <pre>
+byte b = 50;
+b = b * 50;
+        </pre></h2>
+        <div class="options">
+            <label><input type="radio" name="q13" value="a"> a) b cannot contain value 50</label>
+            <label><input type="radio" name="q13" value="b"> b) b cannot contain value 100, limited by its range</label>
+            <label><input type="radio" name="q13" value="c"> c) No error in this code</label>
+            <label><input type="radio" name="q13" value="d"> d) * operator has converted b * 50 into int, which cannot be converted to byte without casting</label>
+        </div>
+    </div>
+       <div class="quiz-container">
+            <p><strong>14. Which of the following is a type of polymorphism in Java Programming?</strong></p>
+            <input type="radio" name="q14" value="a"> a) Multiple polymorphism<br>
+            <input type="radio" name="q14" value="b"> b) Compile time polymorphism<br>
+            <input type="radio" name="q14" value="c"> c) Multilevel polymorphism<br>
+            <input type="radio" name="q14" value="d"> d) Execution time polymorphism<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>15. What will be the output of the following Java program?</strong></p>
+            <pre>
+<h2>class leftshift_operator {
+    public static void main(String args[]) {        
+        byte x = 64;
+        int i;
+        byte y; 
+        i = x << 2;
+        y = (byte) (x << 2);
+        System.out.print(i + " " + y);
+    }
+}</h2>
+            </pre>
+            <input type="radio" name="q15" value="a"> a) 0 256<br>
+            <input type="radio" name="q15" value="b"> b) 0 64<br>
+            <input type="radio" name="q15" value="c"> c) 256 0<br>
+            <input type="radio" name="q15" value="d"> d) 64 0<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>16. What will be the output of the following Java code?</strong></p>
+            <pre><h2>
+class box {
+    int width;
+    int height;
+    int length;
+} 
+class main {
+    public static void main(String args[]) {        
+        box obj = new box();
+        obj.width = 10;
+        obj.height = 2;
+        obj.length = 10;
+        int y = obj.width * obj.height * obj.length; 
+        System.out.print(y);
+    }
+}</h2>
+            </pre>
+            <input type="radio" name="q16" value="a"> a) 100<br>
+            <input type="radio" name="q16" value="b"> b) 400<br>
+            <input type="radio" name="q16" value="c"> c) 200<br>
+            <input type="radio" name="q16" value="d"> d) 12<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>17. What is Truncation in Java?</strong></p>
+            <input type="radio" name="q17" value="a"> a) Floating-point value assigned to a Floating type<br>
+            <input type="radio" name="q17" value="b"> b) Floating-point value assigned to an integer type<br>
+            <input type="radio" name="q17" value="c"> c) Integer value assigned to floating type<br>
+            <input type="radio" name="q17" value="d"> d) Integer value assigned to floating type<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>18. What will be the output of the following Java program?</strong></p>
+            <pre>
+<h2>class Output {
+    public static void main(String args[]) {
+        int arr[] = {1, 2, 3, 4, 5};
+        for (int i = 0; i < arr.length - 2; ++i)
+            System.out.println(arr[i] + " ");
+    }
+}</h2>
+            </pre>
+            <input type="radio" name="q18" value="a"> a) 1 2 3 4 5<br>
+            <input type="radio" name="q18" value="b"> b) 1 2 3 4<br>
+            <input type="radio" name="q18" value="c"> c) 1 2<br>
+            <input type="radio" name="q18" value="d"> d) 1 2 3<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>19. What will be the output of the following Java code snippet?</strong></p>
+            <pre>
+<h2>class abc {
+    public static void main(String args[]) {
+        if(args.length > 0)
+            System.out.println(args.length);
+    }
+}</h2>
+            </pre>
+            <input type="radio" name="q19" value="a"> a) The snippet compiles and runs but does not print anything<br>
+            <input type="radio" name="q19" value="b"> b) The snippet compiles, runs and prints 0<br>
+            <input type="radio" name="q19" value="c"> c) The snippet compiles, runs and prints 1<br>
+            <input type="radio" name="q19" value="d"> d) The snippet does not compile<br>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>20. What is the file extension used for compiled Java classes?</strong></p>
+            <input type="radio" name="q20" value="a"> a) .txt<br>
+            <input type="radio" name="q20" value="b"> b) .js<br>
+            <input type="radio" name="q20" value="c"> c) .class<br>
+            <input type="radio" name="q20" value="d"> d) .java<br>
+        </div>
+    
+ <div class="quiz-container"> 
+    <p><strong>21. Which exception is thrown when java is out of memory?</strong></p>
+    <input type="radio" name="q21" value="a"> a) MemoryError<br>
+    <input type="radio" name="q21" value="b"> b) OutOfMemoryError<br>
+    <input type="radio" name="q21" value="c"> c) MemoryOutOfBoundsException<br>
+    <input type="radio" name="q21" value="d"> d) MemoryFullException<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>22. What will be the output of the following Java code?</strong></p>
+    <pre>
+<h2>class String_demo 
+{
+    public static void main(String args[])
+    {
+        char chars[] = {'a', 'b', 'c'};
+        String s = new String(chars);
+        System.out.println(s);
+    }
+}</h2></pre>
+    <input type="radio" name="q22" value="a"> a) abc<br>
+    <input type="radio" name="q22" value="b"> b) a<br>
+    <input type="radio" name="q22" value="c"> c) b<br>
+    <input type="radio" name="q22" value="d"> d) c<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>23. Which of these are selection statements in Java?</strong></p>
+    <input type="radio" name="q23" value="a"> a) break<br>
+    <input type="radio" name="q23" value="b"> b) continue<br>
+    <input type="radio" name="q23" value="c"> c) for()<br>
+    <input type="radio" name="q23" value="d"> d) if()<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>24. What will be the output of the following Java program?</strong></p>
+    <pre>
+<h2>class recursion 
+{
+    int func (int n) 
+    {
+        int result;
+        if (n == 1)
+            return 1;
+        result = func (n - 1);
+        return result;
+    }
+} 
+class Output 
+{
+    public static void main(String args[]) 
+    {
+        recursion obj = new recursion() ;
+        System.out.print(obj.func(5));
+    }
+}</h2></pre>
+    <input type="radio" name="q24" value="a"> a) 1<br>
+    <input type="radio" name="q24" value="b"> b) 120<br>
+    <input type="radio" name="q24" value="c"> c) 0<br>
+    <input type="radio" name="q24" value="d"> d) None of the mentioned<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>25. What will be the output of the following Java code?</strong></p>
+    <pre>
+<h2>class output 
+{
+    public static void main(String args[])
+    { 
+        String c = "Hello i love java";
+        boolean var;
+        var = c.startsWith("hello");
+        System.out.println(var);
+    }
+}</h2></pre>
+    <input type="radio" name="q25" value="a"> a) 0<br>
+    <input type="radio" name="q25" value="b"> b) true<br>
+    <input type="radio" name="q25" value="c"> c) 1<br>
+    <input type="radio" name="q25" value="d"> d) false<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>26. Which of these keywords is used to define interfaces in Java?</strong></p>
+    <input type="radio" name="q26" value="a"> a) intf<br>
+    <input type="radio" name="q26" value="b"> b) Intf<br>
+    <input type="radio" name="q26" value="c"> c) interface<br>
+    <input type="radio" name="q26" value="d"> d) Interface<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>27. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+class output 
+{
+    public static void main(String args[])
+    { 
+        StringBuffer s1 = new StringBuffer("Quiz");
+        StringBuffer s2 = s1.reverse();
+        System.out.println(s2);
+    }</h2>
+}</pre>
+    <input type="radio" name="q27" value="a"> a) QuizziuQ<br>
+    <input type="radio" name="q27" value="b"> b) ziuQQuiz<br>
+    <input type="radio" name="q27" value="c"> c) Quiz<br>
+    <input type="radio" name="q27" value="d"> d) ziuQ<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>28. What will be the output of the following Java code?</strong></p>
+    <pre><h2>
+class Output 
+{
+    public static void main(String args[]) 
+    {
+        Integer i = new Integer(257);  
+        byte x = i.byteValue();
+        System.out.print(x);
+    }
+    
+}</h2></pre>
+    <input type="radio" name="q28" value="a"> a) 257<br>
+    <input type="radio" name="q28" value="b"> b) 256<br>
+    <input type="radio" name="q28" value="c"> c) 1<br>
+    <input type="radio" name="q28" value="d"> d) 0<br>
+</div>
+ <div class="quiz-container"> 
+    <p><strong>29. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+class Output 
+{
+     public static void main(String args[]) 
+    {
+        double x = 2.0;  
+        double y = 3.0;
+        double z = Math.pow( x, y );
+        System.out.print(z);
+    }
+}</h2></pre>
+    <input type="radio" name="q29" value="a"> a) 9.0<br>
+    <input type="radio" name="q29" value="b"> b) 8.0<br>
+    <input type="radio" name="q29" value="c"> c) 4.0<br>
+    <input type="radio" name="q29" value="d"> d) 2.0<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>30. Which of the following is a superclass of every class in Java?</strong></p>
+    <input type="radio" name="q30" value="a"> a) ArrayList<br>
+    <input type="radio" name="q30" value="b"> b) Abstract class<br>
+    <input type="radio" name="q30" value="c"> c) Object class<br>
+    <input type="radio" name="q30" value="d"> d) String<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>31. What will be the output of the following Java code?</strong></p>
+    <pre>
+<h2>class Output 
+{
+     public static void main(String args[]) 
+     {
+         double x = 3.14;  
+         int y = (int) Math.ceil(x);
+         System.out.print(y);
+     }
+}</h2></pre>
+    <input type="radio" name="q31" value="a"> a) 3<br>
+    <input type="radio" name="q31" value="b"> b) 0<br>
+    <input type="radio" name="q31" value="c"> c) 4<br>
+    <input type="radio" name="q31" value="d"> d) 3.0<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>32. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+import java.net.*;
+class networking 
+{
+    public static void main(String[] args) throws Exception 
+    {
+        URL obj = new URL("https://www.sanfoundry.com/javamcq");
+        URLConnection obj1 = obj.openConnection();
+        int len = obj1.getContentLength();
+        System.out.print(len);
+    }
+}</h2></pre>
+    <p>Note: Host URL is having length of content 127.</p>
+    <input type="radio" name="q32" value="a"> a) 127<br>
+    <input type="radio" name="q32" value="b"> b) 126<br>
+    <input type="radio" name="q32" value="c"> c) Runtime Error<br>
+    <input type="radio" name="q32" value="d"> d) Compilation Error<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>33. Which of the below is not a Java Profiler?</strong></p>
+    <input type="radio" name="q33" value="a"> a) JProfiler<br>
+    <input type="radio" name="q33" value="b"> b) Eclipse Profiler<br>
+    <input type="radio" name="q33" value="c"> c) JVM<br>
+    <input type="radio" name="q33" value="d"> d) JConsole<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>34. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+import java.net.*;
+class networking
+{
+    public static void main(String[] args) throws MalformedURLException
+    {
+        URL obj = new URL("https://www.sanfoundry.com/javamcq");
+        System.out.print(obj.toExternalForm());
+    }
+}</h2></pre>
+    <input type="radio" name="q34" value="a"> a) www.sanfoundry.com<br>
+    <input type="radio" name="q34" value="b"> b) https://www.sanfoundry.com/javamcq<br>
+    <input type="radio" name="q34" value="c"> c) sanfoundry<br>
+    <input type="radio" name="q34" value="d"> d) sanfoundry.com<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>35. What will be the output of the following Java code snippet?</strong></p>
+    <pre><h2>
+import java.util.*;
+class Arraylists 
+{
+    public static void main(String args[]) 
+    {
+        ArrayLists obj = new ArrayLists();
+        obj.add("A");
+        obj.add("B");
+        obj.add("C");
+        obj.add(1, "D");
+        System.out.println(obj);
+    }
+}</h2></pre>
+    <input type="radio" name="q35" value="a"> a) [A, D, C]<br>
+    <input type="radio" name="q35" value="b"> b) [A, B, C]<br>
+    <input type="radio" name="q35" value="c"> c) [A, B, C, D]<br>
+    <input type="radio" name="q35" value="d"> d) [A, D, B, C]<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>36. Which of these packages contains the exception Stack Overflow in Java?</strong></p>
+    <input type="radio" name="q36" value="a"> a) java.io<br>
+    <input type="radio" name="q36" value="b"> b) java.system<br>
+    <input type="radio" name="q36" value="c"> c) java.lang<br>
+    <input type="radio" name="q36" value="d"> d) java.util<br>
+</div>
+ <div class="quiz-container"> 
+    <p><strong>37. What will be the output of the following Java program?</strong></p>
+    <pre>
+<h2>import java.util.*;
+class Collection_iterators 
+{
+    public static void main(String args[]) 
+    {
+        LinkedList list = new LinkedList();
+        list.add(new Integer(2));
+        list.add(new Integer(8));
+        list.add(new Integer(5));
+        list.add(new Integer(1));
+        Iterator i = list.iterator();
+        Collections.reverse(list);
+        Collections.sort(list);
+        while(i.hasNext())
+            System.out.print(i.next() + " ");
+    }
+}</h2></pre>
+    <input type="radio" name="q37" value="a"> a) 1 2 5 8<br>
+    <input type="radio" name="q37" value="b"> b) 2 1 8 5<br>
+    <input type="radio" name="q37" value="c"> c) 1 5 8 2<br>
+    <input type="radio" name="q37" value="d"> d) 2 8 5 1<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>38. Which of these statements is incorrect about Thread?</strong></p>
+    <input type="radio" name="q38" value="a"> a) start() method is used to begin execution of the thread<br>
+    <input type="radio" name="q38" value="b"> b) run() method is used to begin execution of a thread before start() method in special cases<br>
+    <input type="radio" name="q38" value="c"> c) A thread can be formed by implementing Runnable interface only<br>
+    <input type="radio" name="q38" value="d"> d) A thread can be formed by a class that extends Thread class<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>39. Which of these keywords are used for the block to be examined for exceptions?</strong></p>
+    <input type="radio" name="q39" value="a"> a) check<br>
+    <input type="radio" name="q39" value="b"> b) throw<br>
+    <input type="radio" name="q39" value="c"> c) catch<br>
+    <input type="radio" name="q39" value="d"> d) try<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>40. What will be the output of the following Java code?</strong></p>
+    <pre><h2>
+class newthread extends Thread
+{
+    Thread t1, t2;
+    newthread()
+    {
+        t1 = new Thread(this,"Thread_1");
+        t2 = new Thread(this,"Thread_2");
+        t1.start();
+        t2.start();
+    }
+    public void run()
+    {
+        t2.setPriority(Thread.MAX_PRIORITY);	
+        System.out.print(t1.equals(t2));
+    }    
+}
+class multithreaded_programing
+{
+    public static void main(String args[])
+    {
+        new newthread();        
+    }
+}</h2></pre>
+    <input type="radio" name="q40" value="a"> a) truetrue<br>
+    <input type="radio" name="q40" value="b"> b) falsefalse<br>
+    <input type="radio" name="q40" value="c"> c) true<br>
+    <input type="radio" name="q40" value="d"> d) false<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>41. Which one of the following is not an access modifier?</strong></p>
+    <input type="radio" name="q41" value="a"> a) Protected<br>
+    <input type="radio" name="q41" value="b"> b) Void<br>
+    <input type="radio" name="q41" value="c"> c) Public<br>
+    <input type="radio" name="q41" value="d"> d) Private<br>
+</div>
+ <div class="quiz-container"> 
+    <p><strong>42. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+final class A 
+{
+     int i;
+}    
+class B extends A 
+{
+    int j;
+    System.out.println(j + " " + i);  
+}    
+class inheritance 
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        obj.display();     
+    }
+}</h2></pre>
+    <input type="radio" name="q42" value="a"> a) 2 2<br>
+    <input type="radio" name="q42" value="b"> b) 3 3<br>
+    <input type="radio" name="q42" value="c"> c) Runtime Error<br>
+    <input type="radio" name="q42" value="d"> d) Compilation Error<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>43. What is the numerical range of a char data type in Java?</strong></p>
+    <input type="radio" name="q43" value="a"> a) 0 to 256<br>
+    <input type="radio" name="q43" value="b"> b) -128 to 127<br>
+    <input type="radio" name="q43" value="c"> c) 0 to 65535<br>
+    <input type="radio" name="q43" value="d"> d) 0 to 32767<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>44. Which class provides system independent server side implementation?</strong></p>
+    <input type="radio" name="q44" value="a"> a) Server<br>
+    <input type="radio" name="q44" value="b"> b) ServerReader<br>
+    <input type="radio" name="q44" value="c"> c) Socket<br>
+    <input type="radio" name="q44" value="d"> d) ServerSocket<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>45. What will be the output of the following Java program?</strong></p>
+    <pre><h2>
+class overload 
+{
+    int x;
+    double y;
+    void add(int a , int b) 
+    {
+        x = a + b;
+    }
+    void add(double c , double d)
+    {
+        y = c + d;
+    }
+    overload() 
+    {
+        this.x = 0;
+        this.y = 0;
+    }        
+}    
+class Overload_methods 
+{
+    public static void main(String args[])
+    {
+        overload obj = new overload();   
+        int a = 2;
+        double b = 3.2;
+        obj.add(a, a);
+        obj.add(b, b);
+        System.out.println(obj.x + " " + obj.y);     
+    }
+} </h2></pre>
+    <input type="radio" name="q45" value="a"> a) 4 6.4<br>
+    <input type="radio" name="q45" value="b"> b) 6.4 6<br>
+    <input type="radio" name="q45" value="c"> c) 6.4 6.4<br>
+    <input type="radio" name="q45" value="d"> d) 6 6<br>
+</div>
+
+<div class="quiz-container"> 
+    <p><strong>46. Which of the following is true about servlets?</strong></p>
+    <input type="radio" name="q46" value="a"> a) Servlets can use the full functionality of the Java class libraries<br>
+    <input type="radio" name="q46" value="b"> b) Servlets execute within the address space of web server, platform independent and uses the functionality of java class libraries<br>
+    <input type="radio" name="q46" value="c"> c) Servlets execute within the address space of web server<br>
+    <input type="radio" name="q46" value="d"> d) Servlets are platform-independent because they are written in java<br>
+</div>
+  
+  
+  <div class="Questions_submit">
+  
+  <input type ="submit" value="submit the Test" name="submit">
+  
+  
+  </div>
+
+
+</form>
+    
+</body>
+</html>

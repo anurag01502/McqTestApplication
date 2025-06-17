@@ -1,5 +1,7 @@
 "# McqTestApplication" 
-🧪 A simple Java-based MCQ (Multiple Choice Questions) test project built using core Java. It runs in the console and calculates score based on user answers.
+🧪 A Java-based MCQ test app where users register and log in to take a 46-question quiz. After login, users see instructions and must check a box to proceed. On completion, a scorecard is shown, and a leaderboard displays competitors who scored more or less.
+
+
 ## 🚀 How to Run
 
 ### Requirements:
